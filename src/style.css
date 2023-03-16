@@ -1,0 +1,268 @@
+/* Organizing and conver 1rem to 10px */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Toggle functions */
+.inactive {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* SplashScreen */
+.splash-screen-container {
+    height: 100vh;
+}
+
+.splash-screen {
+    height: 100vh;
+}
+
+.ss-body-container {
+    height: 100vh;
+}
+
+.ss-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50vh;
+}
+
+.ss-logo {
+    width: 15%;
+}
+
+.ss-p-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.ss-p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ss-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    height: 3vh;
+}
+
+.ss-loading-gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 2.5vh;
+    width: 12vw;
+}
+
+.ss-loading-white {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    height: 2vh;
+    width: 11.5vw;
+}
+
+.ss-loading-blue {
+    margin-left: 0.2rem;
+    background-color: blue;
+    height: 1.8vh;
+    width: 3vw;
+}
+
+/* First View */
+.welcome-container {
+    height: 100vh;
+}
+
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.w-login-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.w-login {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    cursor: pointer;
+}
+
+.w-register-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.w-register {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+
+.login {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.register {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.w-center-floating-container {
+    width: 100vw;
+    position: absolute;
+}
+
+.w-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+}
+
+.w-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.w-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.w-logo {
+    width: 30%;
+}
+
+/* Forms */
+.login-register-design-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-design {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  
+}
+
+.ld-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25.5rem;
+    width: 50vw;
+    background-color: purple;
+}
+
+.ld-title {
+    font-size: 12rem;
+    font-weight: bold;
+}
+
+.ld-p-container {
+    margin-top: 4rem;
+}
+
+.ld-p {
+    font-size: 4rem;
+}
+
+.ld-form-container {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+}
+
+.ld-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.ld-subtitle-container {
+    margin-top: 30rem;
+    margin-bottom: 10rem;
+}
+
+.ld-subtitle {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputs-form  {
+    margin: 4rem 0;
+}
+
+.inputs-form > input {
+    font-size: 4rem;
+    padding: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sumbit-button-container {
+    margin-top: 10rem;
+}
+
+.sumbit-button-container > button {
+    font-size: 4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.suggered-questions-container {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.suggered-questions > a {
+    font-size: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
