@@ -13,15 +13,6 @@ body {
     font-size: 1.6rem;
 }
 
-/* Toggle functions */
-.inactive {
-    display: none;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
 /* SplashScreen */
 .splash-screen-container {
     height: 100vh;
@@ -53,7 +44,7 @@ body {
 }
 
 .ss-p {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -87,7 +78,12 @@ body {
     margin-left: 0.2rem;
     background-color: blue;
     height: 1.8vh;
-    width: 3vw;
+    width: 0%;
+    animation: chargeBar 4s forwards;
+}
+@keyframes chargeBar {
+    from { width: 0%;}
+    to {width: 100%;}
 }
 
 /* First View */
@@ -113,7 +109,7 @@ body {
     justify-content: center;
     position: relative;
     top: 20vh;
-    cursor: pointer;
+
 }
 
 .w-register-container {
@@ -132,11 +128,13 @@ body {
 .login {
     font-size: 4rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .register {
     font-size: 4rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .w-center-floating-container {
@@ -265,4 +263,149 @@ body {
     font-size: 3rem;
     text-decoration: none;
     cursor: pointer;
+}
+
+.register-design {
+    height: 100vh;
+    width: 100vw;
+    display: flex;    
+}
+
+.rd-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25.5rem;
+    width: 50vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+.rd-title {
+    font-size: 12rem;
+    font-weight: bold;
+}
+
+.rd-p-container {
+    margin-top: 4rem;
+}
+
+.rd-p {
+    font-size: 4rem;
+}
+
+.rd-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.rd-form {
+    text-align: center;
+}
+
+.rd-subtitle-container {
+    margin-top: 30rem;
+    margin-bottom: 10rem;
+}
+
+.rd-subtitle {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rd-steps {
+    display: flex;
+    font-size: 3rem;
+    justify-content: end;
+}
+
+.inputs-form-file {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.inputs-form-file > input {
+    font-size: 2.5rem;
+    margin-right: 5rem;
+}
+
+.rd-file-text {
+    font-size: 3rem;
+}
+
+.rd-button-checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.rd-checkbox {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 5rem;
+}
+
+.rd-checkbox-text {
+    font-size: 3rem;
+}
+
+.rd-button-register {
+    margin-top: 5rem;
+}
+
+.rd-button-register-container > button {
+    font-size: 4rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.rd-form-displace {
+    display: flex;
+    justify-content: center;
+}
+
+.rd-form-displace > div {
+    width: 50px;
+    height: auto;
+    margin: 2rem;
+}
+
+.rd-form-displace > div > img {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+#firstArrow {
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+#secondArrow {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Toggle functions */
+.inactive {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
 }

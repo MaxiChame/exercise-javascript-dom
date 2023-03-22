@@ -8,11 +8,11 @@
     <title>Main Page - Welcome !</title>
 </head>
 <body>
-    <section class="splash-screen-container" id="sectionClass">
+    <!-- <section class="splash-screen-container">
         <div class="splash-screen">
             <div class="ss-body-container">
                 <div class="ss-logo-container">
-                    <img class="ss-logo" src="/tick 3d test.jpg" alt="Tick 3D with primary colors and green box">
+                    <img class="ss-logo" src="../src/assets/tick3dtest.jpg" alt="Tick 3D with primary colors and green box">
                 </div>
                 <div class="ss-p-container">
                     <p class="ss-p">
@@ -28,20 +28,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-        <div class="w-center-floating-container" id="goForm">
+        <div class="w-center-floating-container inactive" id="float">
             <div class="w-center">
                 <div class="w-title-container">
                     <h1 class="w-title">Welcome to <br> MultiTaskingProyect</h1>
                 </div>
                 <div class="w-logo-container">
-                    <img class="w-logo" src="/tick 3d test.jpg">
+                    <img class="w-logo" src="../src/assets/tick3dtest.jpg">
                 </div>
             </div>
         </div>
 
-    <section class="welcome-container" id="goLoginDesign">
+    <section class="welcome-container inactive" id="goForm">
         <div class="welcome">
             <div class="w-login-container">
                 <div class="w-login">
@@ -50,7 +50,7 @@
             </div>
             <div class="w-register-container">
                 <div class="w-register">
-                    <h2 class="register">REGISTER</h2>
+                    <h2 id="toRegister" class="register">REGISTER</h2>
                 </div>
             </div>
         </div>   
@@ -63,18 +63,18 @@
             </div>
         </div> -->
 
-    <section class="login-register-design-container">
-        <div class="login-design                                  ">
+    <section class="login-register-design-container  inactive" id="loginAndRegister">
+        <div class="login-design                                  inactive" id="loginDesign">
             <div class="ld-text-container">
                 <div class="ld-title-container">
                     <h1 class="ld-title">Your Space to <br> Be Organized</h1>
                 </div>
                 <div class="ld-p-container">
-                    <p class="ld-p">Join this app to organize your <br> projects in a mor comfortable way</p>
+                    <p class="ld-p">Join this app to organize your <br> projects in a more comfortable way</p>
                 </div>
             </div>
             <div class="ld-form-container">
-                <form class="ld-form">
+                <form class="ld-form" action="firstStage.html">
                     <div class="ld-subtitle-container">
                         <h2 class="ld-subtitle">Let's prepare for <br> Launch!</h2>
                     </div>
@@ -98,7 +98,7 @@
                 </form>
             </div>
         </div>
-        <div class="register-design                                 inactive">
+        <div class="register-design                                 inactive" id="registerDesign">
             <div class="rd-text-container">
                 <div class="rd-title-container">
                     <h1 class="rd-title">Ready to Start</h1>
@@ -112,50 +112,50 @@
                     <div class="rd-subtitle-container">
                         <h2 class="rd-subtitle">Create Account</h2>
                     </div>
-                    <div class="rd-steps">
+                    <div class="rd-steps"                                            id="rdSteps1">
                         Step 1-2
                     </div>
-                    <div class="rd-steps                             invisible">
+                    <div class="rd-steps                             invisible"      id="rdSteps2">
                         Step 2-2
                     </div>
-                    <div class="inputs-form  ">
+                    <div class="inputs-form"                                         id="inputName">
                         <input type="text" placeholder="Name">
                     </div>
-                    <div class="inputs-form                               invisible">
+                    <div class="inputs-form                               invisible" id="inputUser">
                         <input type="text" placeholder="User">
                     </div>
-                    <div class="inputs-form  ">
+                    <div class="inputs-form"                                         id="inputSurname">
                         <input type="text" placeholder="Surname">
                     </div>
-                    <div class="inputs-form                               invisible">
+                    <div class="inputs-form                               invisible" id="inputPassword">
                         <input type="password" placeholder="Password">
                     </div>
-                    <div class="inputs-form  ">
+                    <div class="inputs-form"                                         id="inputMail">
                         <input type="email" placeholder="Mail">
                     </div>
-                    <div class="inputs-form                               invisible">
+                    <div class="inputs-form-file                          invisible" id="inputFile">
                         <input type="file">
                         <p class="rd-file-text">Upload a profile picture <br> (optional)</p>
                     </div>
-                    <div class="rd-button-checkbox-container">
+                    <div class="rd-button-checkbox-container"                         id="inputCheckbox">
                         <input class="rd-checkbox" type="checkbox">
                         <p class="rd-checkbox-text">I agree to Terms & Conditions</p>
                     </div>
-                    <div class="rd-button-register-container">
-                        <button class="" type="submit">Register</button>
+                    <div class="rd-button-register-container               invisible" id="submitButton">
+                        <button class="rd-button-register" type="submit">Register</button>
                     </div>
                     <div class="rd-form-displace">
-                        <div>Flecha1
-                            <img alt="">
+                        <div>
+                            <img src="/src/assets/transparent-arrow.png" alt="flecha hacia la izquierda" id="firstArrow" onclick="registerFormPreviousPage()">
                         </div>
                         <div>
-                            <div>Circulo1</div>
+                            <img src="/src/assets/transparent-circle.png" alt="circulo hacia la derecha" id="a">
                         </div>
                         <div>
-                            <div>Circulo2</div>
+                            <img src="/src/assets/transparent-circle.png" alt="circulo hacia la derecha">
                         </div>
-                        <div>Flecha2
-                            <img alt="">
+                        <div>
+                            <img src="/src/assets/transparent-arrow.png" alt="flecha hacia la derecha" id="secondArrow" onclick="registerFormNextPage()">
                         </div>
                     </div>
                 </form>
